@@ -18,7 +18,7 @@ def load_names():
 def write_script(names):
     write_new_names = open("thescript.txt", "w")
     for name in names:
-        print("Get -Mail \"{}\" -Display \"{}\" -IDK".format(name[0], name[1]), file=write_new_names)
+        print("Set-Mailbox \"{}\" -DisplayName \"{}\"".format(name[0], name[1]), file=write_new_names)
     write_new_names.close()
 
 main()
